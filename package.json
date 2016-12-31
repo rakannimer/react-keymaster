@@ -17,7 +17,8 @@
     "start": "nwb serve-react-demo",
     "test": "nwb test",
     "test:coverage": "nwb test --coverage",
-    "test:watch": "nwb test --server"
+    "test:watch": "nwb test --server",
+    "deploy": "nwb build && cd demo/dist/ && surge ./ --domain react-keymaster.surge.sh"
   },
   "dependencies": {
     "keymaster": "rakannimer/keymaster"
