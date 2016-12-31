@@ -1,0 +1,51 @@
+{
+  "name": "react-keymaster",
+  "version": "0.1.0",
+  "description": "React component to listen to keydown and keyup keyboard events",
+  "main": "lib/index.js",
+  "jsnext:main": "es/index.js",
+  "module": "es/index.js",
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "build": "nwb build-react-component",
+    "clean": "nwb clean-module && npm clean-demo",
+    "start": "nwb serve-react-demo",
+    "test": "nwb test",
+    "test:coverage": "nwb test --coverage",
+    "test:watch": "nwb test --server"
+  },
+  "dependencies": {
+    "keymaster": "rakannimer/keymaster"
+  },
+  "peerDependencies": {
+    "react": "15.x"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0",
+    "nwb": "0.12.x",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "author": "Rakan Nimer",
+  "homepage": "https://github.com/RakanNimer/react-keymaster",
+  "license": "MIT",
+  "repository": "https://github.com/RakanNimer/react-keymaster",
+  "keywords": [
+    "react",
+    "keyboard",
+    "keyboard events",
+    "keymaster",
+    "keyDown",
+    "keyUp"
+  ]
+}
