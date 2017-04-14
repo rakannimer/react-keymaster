@@ -23,19 +23,16 @@ class Demo extends React.Component {
     });
   }
   render() {
-    return (<div>
-      <h1>react-keymaster demo</h1>
-      <ReactKeymaster
-        keyName="a"
-        onKeyDown={this.onKeyDown}
-        onKeyUp={this.onKeyUp}
-      />
+    return (
       <div>
-        {
-          this.state.output
-        }
+        <h1>react-keymaster demo</h1>
+        <input />
+        <ReactKeymaster keyName="a" onKeyDown={this.onKeyDown} onKeyUp={this.onKeyUp} />
+        <div>
+          {this.state.output}
+        </div>
       </div>
-    </div>);
+    );
   }
 }
 

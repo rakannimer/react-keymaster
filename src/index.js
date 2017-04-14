@@ -8,8 +8,13 @@ const callIfExists = (fnc, ...args) => {
   return null;
 };
 
-class ReactKeymaster extends React.Component {
+keymaster.filter = function (event) {
+  const tagName = (event.target || event.srcElement).tagName;
+  keymaster.setScope(/^(INPUT|TEXTAREA|SELECT)$/.test(tagName) ? 'input' : 'other');
+  return true;
+};
 
+class ReactKeymaster extends React.Component {
   constructor(props) {
     super(props);
     this.onKeyDown = this.onKeyDown.bind(this);

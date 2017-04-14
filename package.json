@@ -1,6 +1,6 @@
 {
   "name": "react-keymaster",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "React component to listen to keydown and keyup keyboard events",
   "main": "lib/index.js",
   "jsnext:main": "es/index.js",
