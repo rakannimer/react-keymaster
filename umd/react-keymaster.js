@@ -1,5 +1,5 @@
 /*!
- * react-keymaster v0.1.0 - https://github.com/RakanNimer/react-keymaster
+ * react-keymaster v0.3.0 - https://github.com/RakanNimer/react-keymaster
  * MIT Licensed
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -68,7 +68,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	'use strict';
 
 	exports.__esModule = true;
-	var _jsxFileName = '/Users/rn/Code/github/active-repos/music-js/react-keymaster/src/index.js';
+	var _jsxFileName = '/Users/rn/Code/github/active-repos/react-keymaster/src/index.js';
 
 	var _react = __webpack_require__(2);
 
@@ -95,6 +95,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return fnc.apply(undefined, args);
 	  }
 	  return null;
+	};
+
+	_keymaster2.default.filter = function (event) {
+	  var tagName = (event.target || event.srcElement).tagName;
+	  _keymaster2.default.setScope(/^(INPUT|TEXTAREA|SELECT)$/.test(tagName) ? 'input' : 'other');
+	  return true;
 	};
 
 	var ReactKeymaster = function (_React$Component) {
@@ -147,7 +153,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return this.props.children || _react2.default.createElement('div', {
 	      __source: {
 	        fileName: _jsxFileName,
-	        lineNumber: 48
+	        lineNumber: 53
 	      },
 	      __self: this
 	    });

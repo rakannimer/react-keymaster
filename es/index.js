@@ -18,6 +18,12 @@ var callIfExists = function callIfExists(fnc) {
   return null;
 };
 
+keymaster.filter = function (event) {
+  var tagName = (event.target || event.srcElement).tagName;
+  keymaster.setScope(/^(INPUT|TEXTAREA|SELECT)$/.test(tagName) ? 'input' : 'other');
+  return true;
+};
+
 var ReactKeymaster = function (_React$Component) {
   _inherits(ReactKeymaster, _React$Component);
 

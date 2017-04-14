@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import ReactKeymaster from '../../src';
+import ReactKeymaster from '../../lib/';
 
 class Demo extends React.Component {
   constructor(props) {
