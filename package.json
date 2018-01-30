@@ -23,9 +23,6 @@
   "dependencies": {
     "keymaster": "rakannimer/keymaster"
   },
-  "peerDependencies": {
-    "react": "15.x"
-  },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
     "eslint": "^3.12.2",
@@ -34,8 +31,9 @@
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.8.0",
     "nwb": "0.12.x",
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1"
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "author": "Rakan Nimer",
   "homepage": "https://github.com/RakanNimer/react-keymaster",
