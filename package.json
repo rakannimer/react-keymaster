@@ -1,0 +1,62 @@
+{
+  "name": "react-keymaster",
+  "version": "0.1.0",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel ./demo/index.html --open",
+    "build": "rm -rf ./dist/ && rollup -c",
+    "test": "jest --coverage",
+    "test:i": "jest --coverage --watch",
+    "prepublish": "npm run test && npm run build",
+    "commit": "git-cz",
+    "setup:semantic-release": "npx semantic-release-cli setup"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.3",
+    "@types/react": "^16.4.16",
+    "@types/react-dom": "^16.0.8",
+    "git-cz": "^1.7.1",
+    "jest": "^23.6.0",
+    "parcel-bundler": "^1.10.1",
+    "prettier": "^1.14.3",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-testing-library": "^5.2.0",
+    "rollup": "^0.66.4",
+    "rollup-plugin-typescript2": "^0.17.1",
+    "semantic-release": "^15.9.17",
+    "ts-jest": "^23.10.3",
+    "typescript": "^3.1.1"
+  },
+  "peerDependencies": {
+    "react": ">= 16.0.0"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "collectCoverageFrom": [
+      "src/*.{ts,tsx}"
+    ],
+    "testPathIgnorePatterns": [
+      "node_modules/",
+      "/build/",
+      "/dist/"
+    ]
+  },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ],
+  "files": [
+    "dist/"
+  ],
+  "description": "React component to listen to keydown and keyup keyboard events",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rakannimer/react-keymaster"
+  },
+  "dependencies": {
+    "keymaster": "^1.6.2"
+  }
+}
