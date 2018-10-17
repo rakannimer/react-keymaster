@@ -12,6 +12,7 @@ export default {
       format: "esm"
     }
   ],
+  external: ["keymaster"],
   plugins: [
     typescript({
       typescript: require("typescript"),
