@@ -44,7 +44,7 @@ export default class ReactKeymaster extends React.Component<
     callIfExists(this.props.onKeyDown, this.props.keyName);
   };
   handleKeyUpEvent = (e: KeyboardEvent) => {
-    if (!this.isKeyDown) return;
+//     if (!this.isKeyDown) return;
     this.isKeyDown = false;
     const pressedKey = String.fromCharCode(e.keyCode).toLowerCase();
     if (pressedKey !== this.props.keyName) return;
